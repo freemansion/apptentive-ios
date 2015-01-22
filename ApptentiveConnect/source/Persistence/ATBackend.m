@@ -584,6 +584,8 @@ static NSURLCache *imageCache = nil;
 - (void)presentMessageCenterFromViewController:(UIViewController *)viewController withCustomData:(NSDictionary *)customData {
 	self.currentCustomData = customData;
 	
+	/* Uncomment this to present alerts before presenting Apptentive Message Center VC
+
 	if (!viewController) {
 		ATLogError(@"Attempting to present Apptentive Message Center from a nil View Controller.");
 	}
@@ -598,6 +600,8 @@ static NSURLCache *imageCache = nil;
 		[self presentIntroDialogFromViewController:viewController withTitle:title prompt:body placeholderText:placeholder];
 		return;
 	}
+	 
+	*/
 	
 	if (presentedMessageCenterViewController != nil) {
 		ATLogInfo(@"Apptentive message center controller already shown.");

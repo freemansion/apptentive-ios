@@ -74,7 +74,8 @@
 		//TODO: Handle this error.
 	}
 	
-	[self createIntroMessageIfNecessary];
+	// Uncomment this to show intro message
+//	[self createIntroMessageIfNecessary];
 }
 
 - (void)stop {

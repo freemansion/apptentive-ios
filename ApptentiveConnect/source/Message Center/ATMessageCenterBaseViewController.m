@@ -123,6 +123,10 @@
 	inputView.placeholder = ATLocalizedString(@"Type a message…", @"Placeholder for message center text input.");
 	
 	[self registerForKeyboardNotifications];
+	
+	UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(containerViewDidTouched)];
+	tapRecognizer.numberOfTapsRequired = 1;
+	[self.containerView addGestureRecognizer:tapRecognizer];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -152,6 +156,11 @@
 	if (self.dismissalDelegate && [self.dismissalDelegate respondsToSelector:@selector(messageCenterDidDismiss:)]) {
 		[self.dismissalDelegate messageCenterDidDismiss:self];
 	}
+}
+
+- (void)containerViewDidTouched
+{
+	[self.view endEditing:YES];
 }
 
 - (void)showSendImageUIIfNecessary {
