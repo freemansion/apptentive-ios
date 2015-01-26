@@ -47,6 +47,7 @@
 		584D266F1819BCA70090BD1B /* icon-152x152.png in Resources */ = {isa = PBXBuildFile; fileRef = 584D266C1819BCA70090BD1B /* icon-152x152.png */; };
 		58805F3B18120EBA00210DA5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58805F3A18120EBA00210DA5 /* Accelerate.framework */; };
 		58849A5019F0AA4E00641140 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58849A4F19F0AA4D00641140 /* Launch Screen.xib */; };
+		E6148EA21A767554001A812A /* at_arrowBack.png in Resources */ = {isa = PBXBuildFile; fileRef = E6148EA11A767554001A812A /* at_arrowBack.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,6 +160,7 @@
 		58EA5B4017B47A4600ECEB4B /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		58EA5B4617B47B4100ECEB4B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		58EA5B5217B47E0C00ECEB4B /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E6148EA11A767554001A812A /* at_arrowBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = at_arrowBack.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 			children = (
 				49C002F11334172F0071F088 /* FeedbackDemo */,
 				4960E13E13455ACE00F6311F /* ATConnect.h */,
+				E6148EA11A767554001A812A /* at_arrowBack.png */,
 				492B9A131909F09D00919442 /* ATConnect_Debugging.h */,
 				49C00324133417390071F088 /* ApptentiveConnect.xcodeproj */,
 				49C003111334172F0071F088 /* FeedbackDemoTests */,
@@ -443,6 +446,7 @@
 				5825F10618AD592C00315374 /* Localizable.strings in Resources */,
 				49E5A52D17F24C9F00146FDD /* MainWindow.xib in Resources */,
 				49E5A52C17F24C9F00146FDD /* MainWindow-iPad.xib in Resources */,
+				E6148EA21A767554001A812A /* at_arrowBack.png in Resources */,
 				49E5A52E17F24C9F00146FDD /* RootViewController.xib in Resources */,
 				493529BD138C712A000E464A /* ApptentiveResources.bundle in Resources */,
 				584D266E1819BCA70090BD1B /* icon-144x144.png in Resources */,

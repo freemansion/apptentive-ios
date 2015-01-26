@@ -87,15 +87,21 @@
 		[self.navigationController.view setTintColor:[[ATConnect sharedConnection] tintColor]];
 	}
 	
-	self.navigationItem.titleView = [defaultTheme titleViewForMessageCenterViewController:self];
-	self.navigationItem.leftBarButtonItem = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(donePressed:)] autorelease];
-	if ([self.navigationItem.leftBarButtonItem respondsToSelector:@selector(initWithImage:landscapeImagePhone:style:target:action:)]) {
-		self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithImage:[ATBackend imageNamed:@"at_user_button_image"] landscapeImagePhone:[ATBackend imageNamed:@"at_user_button_image_landscape"] style:UIBarButtonItemStylePlain target:self action:@selector(settingsPressed:)]autorelease];
-		self.navigationItem.rightBarButtonItem.accessibilityLabel = ATLocalizedString(@"Contact Settings", @"Title of contact information edit screen");
-	} else {
-		self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithImage:[ATBackend imageNamed:@"at_user_button_image"] style:UIBarButtonItemStylePlain target:self action:@selector(settingsPressed:)]autorelease];
-	}
-		
+	self.title = @"Support";
+
+	UIImage *arrowBackImage = [UIImage imageNamed:@"at_arrowBack"];
+	arrowBackImage = [arrowBackImage imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+	
+	UIButton *backButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 32, 32)];
+	[backButton setContentMode:UIViewContentModeScaleAspectFit];
+	backButton.imageEdgeInsets = UIEdgeInsetsMake(0, -40, 0, 0);
+	[backButton setBackgroundImage:arrowBackImage forState:UIControlStateNormal];
+	backButton.tintColor = [UIColor colorWithRed:0/255. green:122/255. blue:255/255. alpha:1];
+	[backButton addTarget:self action:@selector(donePressed:) forControlEvents:UIControlEventTouchUpInside];
+	
+	UIBarButtonItem *backBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
+	self.navigationItem.leftBarButtonItem = backBarButtonItem;
+	
 	[self.view addSubview:self.containerView];
 	if ([ATUtilities osVersionGreaterThanOrEqualTo:@"7"]) {
 		inputViewNib = [UINib nibWithNibName:@"ATMessageInputViewV7" bundle:[ATConnect resourceBundle]];
@@ -128,6 +134,7 @@
 	tapRecognizer.numberOfTapsRequired = 1;
 	[self.containerView addGestureRecognizer:tapRecognizer];
 }
+
 
 - (void)viewWillDisappear:(BOOL)animated {
 	[super viewWillDisappear:animated];
