@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage = 'https://www.apptentive.com/'
   s.authors  = { "Andrew Wooster" => "andrew@apptentive.com",
                  "Peter Kamb" => "peter@apptentive.com" }
-  s.source   = { :git => 'https://github.com/apptentive/apptentive-ios.git', :tag => "v#{s.version}" }
+  s.source   = { :git => 'https://github.com/freemansion/apptentive-ios.git', :tag => "v#{s.version}" }
   s.platform = :ios, '5.0'
   s.source_files   = 'ApptentiveConnect/source/**/*.{h,m}','ApptentiveConnect/ext/**/*.{h,m}'
   s.exclude_files = 'ApptentiveConnect/ext/PrefixedTTTAttributedLabel/**/*.*'
