@@ -167,6 +167,8 @@ extern NSString *const ATIntegrationKeyParse;
 @property (nonatomic, retain) UIColor *tintColor;
 #endif
 
+@property (nonatomic, assign) BOOL isMessageCenterPresented;
+
 
 #if TARGET_OS_IPHONE
 

@@ -200,6 +200,7 @@
 		[self.dismissalDelegate messageCenterWillDismiss:self];
 	}
 	[self.navigationController dismissViewControllerAnimated:YES completion:NULL];
+	[ATConnect sharedConnection].isMessageCenterPresented = NO;
 }
 
 - (IBAction)settingsPressed:(id)sender {

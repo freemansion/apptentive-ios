@@ -73,6 +73,7 @@ NSString *const ATConnectCustomDeviceDataChangedNotification = @"ATConnectCustom
 		useMessageCenter = YES;
 		_initiallyUseMessageCenter = YES;
 		_initiallyHideBranding = NO;
+		_isMessageCenterPresented = NO;
 		
 		NSDictionary *defaults = @{ATAppConfigurationMessageCenterEnabledKey: @(_initiallyUseMessageCenter),
 								   ATAppConfigurationMessageCenterEmailRequiredKey: @NO,
@@ -424,6 +425,7 @@ NSString *const ATConnectCustomDeviceDataChangedNotification = @"ATConnectCustom
 
 - (void)presentMessageCenterFromViewController:(UIViewController *)viewController {
 	[[ATBackend sharedBackend] presentMessageCenterFromViewController:viewController];
+	_isMessageCenterPresented = YES;
 }
 
 - (void)presentMessageCenterFromViewController:(UIViewController *)viewController withCustomData:(NSDictionary *)customData {
@@ -434,6 +436,8 @@ NSString *const ATConnectCustomDeviceDataChangedNotification = @"ATConnectCustom
 	}
 	
 	[[ATBackend sharedBackend] presentMessageCenterFromViewController:viewController withCustomData:allowedCustomMessageData];
+	
+	_isMessageCenterPresented = YES;
 }
 
 - (void)didReceiveRemoteNotification:(NSDictionary *)userInfo fromViewController:(UIViewController *)viewController {
@@ -460,6 +464,7 @@ NSString *const ATConnectCustomDeviceDataChangedNotification = @"ATConnectCustom
 
 - (void)dismissMessageCenterAnimated:(BOOL)animated completion:(void (^)(void))completion {
 	[[ATBackend sharedBackend] dismissMessageCenterAnimated:animated completion:completion];
+	_isMessageCenterPresented = NO;
 }
 
 - (NSUInteger)unreadMessageCount {
