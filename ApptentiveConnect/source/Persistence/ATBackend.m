@@ -616,7 +616,6 @@ static NSURLCache *imageCache = nil;
 	vc.dismissalDelegate = self;
 	ATNavigationController *nc = [[ATNavigationController alloc] initWithRootViewController:vc];
 	nc.disablesAutomaticKeyboardDismissal = NO;
-	nc.modalPresentationStyle = UIModalPresentationFormSheet;
 	[viewController presentViewController:nc animated:YES completion:^{}];
 	presentedMessageCenterViewController = nc;
 	[vc release], vc = nil;

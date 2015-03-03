@@ -199,7 +199,8 @@
 	if (self.dismissalDelegate) {
 		[self.dismissalDelegate messageCenterWillDismiss:self];
 	}
-	[self.navigationController dismissViewControllerAnimated:YES completion:NULL];
+	[self.navigationController popViewControllerAnimated:YES];
+//	[self.navigationController dismissViewControllerAnimated:YES completion:NULL];
 	[ATConnect sharedConnection].isMessageCenterPresented = NO;
 }
 
