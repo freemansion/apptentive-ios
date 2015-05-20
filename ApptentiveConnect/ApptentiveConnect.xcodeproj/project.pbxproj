@@ -237,7 +237,6 @@
 		49BC2A5A144F75E20041E789 /* ATShadowView.h in Headers */ = {isa = PBXBuildFile; fileRef = 49BC2A58144F75E10041E789 /* ATShadowView.h */; };
 		49BC2A5B144F75E20041E789 /* ATShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49BC2A59144F75E20041E789 /* ATShadowView.m */; };
 		49C0028E1334137E0071F088 /* ApptentiveConnectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C0028A1334137E0071F088 /* ApptentiveConnectTests.m */; };
-		49C0028F1334137E0071F088 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49C0028B1334137E0071F088 /* InfoPlist.strings */; };
 		49C002A1133413BB0071F088 /* ApptentiveConnect-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 49C00296133413BB0071F088 /* ApptentiveConnect-Prefix.pch */; };
 		49C002A2133413BB0071F088 /* ATConnect.h in Headers */ = {isa = PBXBuildFile; fileRef = 49C00297133413BB0071F088 /* ATConnect.h */; settings = {ATTRIBUTES = (); }; };
 		49C002A3133413BB0071F088 /* ATConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C00298133413BB0071F088 /* ATConnect.m */; };
@@ -269,7 +268,6 @@
 		49E7408F1840497600413697 /* v3WALDatabase in Resources */ = {isa = PBXBuildFile; fileRef = 49E7408E1840497600413697 /* v3WALDatabase */; };
 		49E740911840498100413697 /* ATDataModelv3.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 49E740901840498100413697 /* ATDataModelv3.sqlite */; };
 		49E847A117E921B800CFA6EC /* ATMessageInputViewV7.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49E847A017E921B800CFA6EC /* ATMessageInputViewV7.xib */; };
-		49E891D0134FE2AB00DD098A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49E891CD134FE2AB00DD098A /* Localizable.strings */; };
 		49EA5AB014BD08AD004F8A4D /* ATLegacyRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 49EA5AAE14BD08AD004F8A4D /* ATLegacyRecord.h */; };
 		49EA5AB114BD08AD004F8A4D /* ATLegacyRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EA5AAF14BD08AD004F8A4D /* ATLegacyRecord.m */; };
 		49EA5AB214BD08AD004F8A4D /* ATLegacyRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EA5AAF14BD08AD004F8A4D /* ATLegacyRecord.m */; };
@@ -535,11 +533,6 @@
 		4988FB5316212BD4000A7CB7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		498EFB6E15BA48B200A1043B /* ATAppConfigurationUpdateTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATAppConfigurationUpdateTask.h; sourceTree = "<group>"; };
 		498EFB6F15BA48B300A1043B /* ATAppConfigurationUpdateTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATAppConfigurationUpdateTask.m; sourceTree = "<group>"; };
-		4995EDC3175959EC00AF7268 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
-		4995EDC417595A0500AF7268 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
-		4995EDC517595A0E00AF7268 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
-		4995EDC617595A1800AF7268 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
-		4995EDC717595A2200AF7268 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		4995EDD0175983C800AF7268 /* PrefixedTTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixedTTTAttributedLabel.h; path = PrefixedTTTAttributedLabel/TTTAttributedLabel/PrefixedTTTAttributedLabel.h; sourceTree = "<group>"; };
 		4995EDD1175983C800AF7268 /* PrefixedTTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PrefixedTTTAttributedLabel.m; path = PrefixedTTTAttributedLabel/TTTAttributedLabel/PrefixedTTTAttributedLabel.m; sourceTree = "<group>"; };
 		4999128216165BD400FDA15F /* ATMessageCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ATMessageCenterViewController.h; path = "Message Center/ATMessageCenterViewController.h"; sourceTree = "<group>"; };
@@ -618,12 +611,10 @@
 		49E7408E1840497600413697 /* v3WALDatabase */ = {isa = PBXFileReference; lastKnownFileType = folder; path = v3WALDatabase; sourceTree = "<group>"; };
 		49E740901840498100413697 /* ATDataModelv3.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ATDataModelv3.sqlite; sourceTree = "<group>"; };
 		49E847A017E921B800CFA6EC /* ATMessageInputViewV7.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATMessageInputViewV7.xib; sourceTree = "<group>"; };
-		49E891CF134FE2AB00DD098A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		49EA5AAE14BD08AD004F8A4D /* ATLegacyRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATLegacyRecord.h; sourceTree = "<group>"; };
 		49EA5AAF14BD08AD004F8A4D /* ATLegacyRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATLegacyRecord.m; sourceTree = "<group>"; };
 		49EA5ABB14BD0F4D004F8A4D /* ATRecordTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATRecordTask.h; sourceTree = "<group>"; };
 		49EA5ABC14BD0F4D004F8A4D /* ATRecordTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATRecordTask.m; sourceTree = "<group>"; };
-		49EA62C317F50D9400C5A638 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
 		49EF002918DA4C7300661F7C /* ATLargeImageResizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATLargeImageResizer.h; sourceTree = "<group>"; };
 		49EF002A18DA4C7300661F7C /* ATLargeImageResizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATLargeImageResizer.m; sourceTree = "<group>"; };
 		49EF003118DB8F6700661F7C /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
@@ -704,12 +695,6 @@
 		58DCC0D4180F445700A3A7AE /* ATInteractionUpgradeMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ATInteractionUpgradeMessageViewController.xib; path = ../xibs/ATInteractionUpgradeMessageViewController.xib; sourceTree = "<group>"; };
 		58E95808190740BC005063DC /* ATSurveyQuestionResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ATSurveyQuestionResponse.h; path = ../Persistence/ATSurveyQuestionResponse.h; sourceTree = "<group>"; };
 		58E95809190740BC005063DC /* ATSurveyQuestionResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ATSurveyQuestionResponse.m; path = ../Persistence/ATSurveyQuestionResponse.m; sourceTree = "<group>"; };
-		58EA5B3617B4781600ECEB4B /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
-		58EA5B3B17B479A500ECEB4B /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
-		58EA5B4117B47AAC00ECEB4B /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
-		58EA5B4717B47BAB00ECEB4B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		58EA5B4E17B47E0C00ECEB4B /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/Localizable.strings; sourceTree = "<group>"; };
-		58EA5B4F17B47E0C00ECEB4B /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		58EEBE2117C7E8150039A0F5 /* ATInteraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ATInteraction.h; path = Engagement/Model/ATInteraction.h; sourceTree = "<group>"; };
 		58EEBE2217C7E8150039A0F5 /* ATInteraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ATInteraction.m; path = Engagement/Model/ATInteraction.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1142,7 +1127,6 @@
 				49C002881334137E0071F088 /* ApptentiveConnectTests-Prefix.pch */,
 				49C002891334137E0071F088 /* ApptentiveConnectTests.h */,
 				49C0028A1334137E0071F088 /* ApptentiveConnectTests.m */,
-				49C0028B1334137E0071F088 /* InfoPlist.strings */,
 				49509DF913583FB800793EEC /* ATUtilitiesTests.h */,
 				49509DFA13583FB800793EEC /* ATUtilitiesTests.m */,
 				4987FAA5157AE59D00AF2078 /* ApptentiveMetricsTests.h */,
@@ -1249,7 +1233,6 @@
 		49E891CC134FE2AA00DD098A /* localization */ = {
 			isa = PBXGroup;
 			children = (
-				49E891CD134FE2AB00DD098A /* Localizable.strings */,
 				49D07DCD17F29A1F0042FCFD /* en.lproj */,
 			);
 			name = localization;
@@ -1614,18 +1597,6 @@
 				en,
 				English,
 				Spanish,
-				es,
-				de,
-				ja,
-				pt,
-				ru,
-				"zh-Hans",
-				nl,
-				it,
-				da,
-				fr,
-				zh,
-				sv,
 			);
 			mainGroup = 496DC3741333D35600743F65;
 			productRefGroup = 496DC3801333D35600743F65 /* Products */;
@@ -1645,7 +1616,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5843F81E188778B000C9D096 /* ATDataModelv4.sqlite in Resources */,
-				49C0028F1334137E0071F088 /* InfoPlist.strings in Resources */,
 				49AA1023138B498C0082887A /* ATInfoViewController.xib in Resources */,
 				58AA40A01821C162000799D8 /* ATDataModelv2.sqlite in Resources */,
 				49AA1025138B49A50082887A /* ATInfoViewController_iPad.xib in Resources */,
@@ -1667,7 +1637,6 @@
 				49D07DD017F29A1F0042FCFD /* Localizable.strings in Resources */,
 				4960E154134A578F00F6311F /* generated in Resources */,
 				49B71CA518417CAC00315AAF /* ATFileMessageUserCellV7.xib in Resources */,
-				49E891D0134FE2AB00DD098A /* Localizable.strings in Resources */,
 				49477BCF183AF5FE001D37AD /* ATLongMessageViewController.xib in Resources */,
 				493529FF138C7253000E464A /* ATInfoViewController.xib in Resources */,
 				49352A00138C7257000E464A /* ATInfoViewController_iPad.xib in Resources */,
@@ -1929,37 +1898,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		49C0028B1334137E0071F088 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				58EA5B4F17B47E0C00ECEB4B /* zh */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		49D07DCE17F29A1F0042FCFD /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				49D07DCF17F29A1F0042FCFD /* en */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		49E891CD134FE2AB00DD098A /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				49E891CF134FE2AB00DD098A /* es */,
-				4995EDC3175959EC00AF7268 /* de */,
-				4995EDC417595A0500AF7268 /* ja */,
-				4995EDC517595A0E00AF7268 /* pt */,
-				4995EDC617595A1800AF7268 /* ru */,
-				4995EDC717595A2200AF7268 /* zh-Hans */,
-				58EA5B3617B4781600ECEB4B /* nl */,
-				58EA5B3B17B479A500ECEB4B /* it */,
-				58EA5B4117B47AAC00ECEB4B /* da */,
-				58EA5B4717B47BAB00ECEB4B /* fr */,
-				58EA5B4E17B47E0C00ECEB4B /* zh */,
-				49EA62C317F50D9400C5A638 /* sv */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
